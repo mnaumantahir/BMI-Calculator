@@ -103,11 +103,11 @@ class _BMIMainState extends State<BMIMain> with SingleTickerProviderStateMixin {
                   child: Text(
                     'Calculate'.toUpperCase(),
                     style: TextStyle(
-                        color: Color(0xFF013487),
+                        color: Colors.lightGreen,
                         fontSize: 16.0,
                         letterSpacing: 1),
                   ),
-                  color: Color.fromRGBO(179, 157, 219, 0.4),
+                  color: Colors.lightGreen,
                   elevation: 0.0,
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   minWidth: 215.0,
@@ -126,9 +126,9 @@ class _BMIMainState extends State<BMIMain> with SingleTickerProviderStateMixin {
                 child: Text(
                   'Calculate'.toUpperCase(),
                   style: TextStyle(
-                      color: Colors.white, fontSize: 16.0, letterSpacing: 1),
+                      color: Colors.white70, fontSize: 16.0, letterSpacing: 1),
                 ),
-                color: Colors.deepPurple,
+                color: Colors.blueGrey,
                 elevation: 2.0,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 minWidth: 200.0,
@@ -160,10 +160,10 @@ class _BMIMainState extends State<BMIMain> with SingleTickerProviderStateMixin {
         )),
       )),
       value: SystemUiOverlayStyle(
-        systemNavigationBarColor: Colors.transparent,
-        systemNavigationBarDividerColor: Colors.black,
+        systemNavigationBarColor: Colors.deepOrange,
+        systemNavigationBarDividerColor: Colors.red,
         systemNavigationBarIconBrightness: Brightness.dark,
-        statusBarColor: Colors.transparent,
+        statusBarColor: Colors.redAccent,
       ),
     );
   }
@@ -252,7 +252,7 @@ class _MaleState extends State<Male> {
                                 }
                               });
                             },
-                            color: Colors.deepPurple,
+                            color: Colors.red,
                           ),
                         ),
                         onLongPressStart: (details) {
@@ -275,7 +275,7 @@ class _MaleState extends State<Male> {
                                 age++;
                               });
                             },
-                            color: Colors.deepPurple,
+                            color: Colors.red,
                           ),
                         ),
                         onLongPressStart: (details) {
@@ -378,7 +378,7 @@ class _FemaleState extends State<Female> {
                                   }
                                 });
                               },
-                              color: Colors.deepPurple,
+                              color: Colors.green,
                             ),
                           ),
                           onLongPressStart: (details) {
@@ -401,7 +401,7 @@ class _FemaleState extends State<Female> {
                                   weight++;
                                 });
                               },
-                              color: Colors.deepPurple,
+                              color: Colors.blue,
                             ),
                           ),
                           onLongPressStart: (details) {
