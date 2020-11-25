@@ -541,10 +541,10 @@ class _HeightState extends State<Height> {
             ),
             SliderTheme(
               data: SliderTheme.of(context).copyWith(
-                activeTrackColor: Colors.grey.shade300,
-                inactiveTrackColor: Colors.grey.shade300,
-                thumbColor: Colors.deepPurple,
-                overlayColor: Color(0x29EB1555),
+                activeTrackColor: Colors.grey,
+                inactiveTrackColor: Colors.grey,
+                thumbColor: Colors.redAccent,
+                overlayColor: Colors.teal,
                 thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15.0),
                 overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
               ),
@@ -597,8 +597,8 @@ class _HeightState extends State<Height> {
                     value: feetValue,
                     hint: Text('ft'),
                     icon: Icon(
-                      Icons.arrow_downward,
-                      color: Colors.grey,
+                      Icons.arrow_back_ios,
+                      color: Colors.black,
                     ),
                     iconSize: 24,
                     elevation: 16,
@@ -640,7 +640,7 @@ class _HeightState extends State<Height> {
                     hint: Text('in'),
                     icon: Icon(
                       Icons.arrow_downward,
-                      color: Colors.grey,
+                      color: Colors.red,
                     ),
                     iconSize: 24,
                     elevation: 16,
@@ -742,10 +742,10 @@ class _GenderState extends State<Gender> {
                           isSwitched = value;
                         });
                       },
-                      inactiveTrackColor: Colors.grey.shade300,
-                      inactiveThumbColor: Colors.deepPurple,
-                      activeTrackColor: Colors.grey.shade300,
-                      activeColor: Colors.deepPurple,
+                      inactiveTrackColor: Colors.grey,
+                      inactiveThumbColor: Colors.teal,
+                      activeTrackColor: Colors.grey,
+                      activeColor: Colors.teal,
                     ),
                     Text(
                       'Male',
